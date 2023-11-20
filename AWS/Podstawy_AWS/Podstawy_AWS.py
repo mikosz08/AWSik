@@ -22,13 +22,8 @@ def test_dynamo():
     dynamo.put_item()
 
 
-def test_bucket():
-    bucket = BucketS3()
-    bucket.create_and_send_file()
-
 
 if __name__ == "__main__":
     # test_lambdas()
     # test_sqs()
     # test_dynamo()
-    test_bucket()
