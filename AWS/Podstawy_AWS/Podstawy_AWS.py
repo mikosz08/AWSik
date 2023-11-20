@@ -22,8 +22,8 @@ def test_dynamo():
     dynamo.put_item()
 
 
-
 if __name__ == "__main__":
     # test_lambdas()
     # test_sqs()
     # test_dynamo()
+    pass

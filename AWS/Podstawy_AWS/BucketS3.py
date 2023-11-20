@@ -23,9 +23,9 @@ class BucketS3:
 
         print(f"Folder '{folder_name}' utworzony i pliki zostały dodane.")
 
-    def setup_user_folder(self):
-        for i in range(10):
-            folder_name = f"user_folder_{i}"
+    def setup_user_folder(self, count: int):
+        for i in range(count):
+            folder_name = f"scraping_{i}"
             num_files_to_create = 3
             bucket.create_folder_and_upload_files(folder_name, num_files_to_create)
 
@@ -73,8 +73,8 @@ class BucketS3:
 
 bucket = BucketS3()
 
-# Adds 10 folders with random files.
-# bucket.setup_user_folder()
+# Adds 4 folders with random files.
+bucket.setup_user_folder(4)
 
 # List folders in bucket.
 folders_list = bucket.list_folders()
