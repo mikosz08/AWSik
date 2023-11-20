@@ -102,3 +102,41 @@ batch_files = {
     "file_batch_2.txt": "batch upload",
 }
 bucket.save_batch_files(folder_to_save, batch_files)
+
+"""
+
+OUTPUT:
+Folder 'scraping_0' utworzony i pliki zostały dodane.
+Folder 'scraping_1' utworzony i pliki zostały dodane.
+Folder 'scraping_2' utworzony i pliki zostały dodane.
+Folder 'scraping_3' utworzony i pliki zostały dodane.
+Lista folderów:
+scraping_0
+Lista plików wewnątrz:
+scraping_0/file_1.txt
+scraping_0/file_2.txt
+scraping_0/file_3.txt
+scraping_1
+Lista plików wewnątrz:
+scraping_1/file_1.txt
+scraping_1/file_2.txt
+scraping_1/file_3.txt
+scraping_2
+Lista plików wewnątrz:
+scraping_2/file_1.txt
+scraping_2/file_2.txt
+scraping_2/file_3.txt
+scraping_3
+Lista plików wewnątrz:
+scraping_3/file_1.txt
+scraping_3/file_2.txt
+scraping_3/file_3.txt
+user_folder_0
+Lista plików wewnątrz:
+user_folder_0/file_batch_1.txt
+user_folder_0/file_batch_2.txt
+user_folder_0/file_single.txt
+Lista plików w folderze użytkownika:'user_folder_8':
+Plik 'file_single.txt' został zapisany w folderze 'user_folder_0'.
+Pliki zostały pomyślnie zapisane w folderze.
+"""
