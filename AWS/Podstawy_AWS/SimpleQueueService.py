@@ -2,7 +2,7 @@
 
 
 class SimpleQueueService:
-    queue_url = "https://sqs.eu-central-1.amazonaws.com/216552612841/MySQS"
+    queue_url = "URL"
     sqs = boto3.client("sqs")
 
     def send_message(self):
